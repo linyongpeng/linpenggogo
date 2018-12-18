@@ -77,7 +77,6 @@ export default {
                     if(!pages[page]){
                         pages[page] = [];
                     }
-                    console.log(item)
                     pages[page].push(item);
             });
             return pages;
