@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-
+import store from '@/store/vuexStore'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
@@ -20,5 +20,6 @@ new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
-  router
+  router,
+  store
 })

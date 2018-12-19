@@ -22,57 +22,14 @@ export default {
         return {
               swiperOption:{
                   pagination:".swiper-pagination"
-              },
-              iconsList:[
-                    {
-                        id:'0001',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-                        titie:'景点门票'
-                    },{
-                        id:'0002',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-                        titie:'广州必游'
-                    },{
-                        id:'0003',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                        titie:'动植物园'
-                    },{
-                        id:'0004',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-                        titie:'游乐场'
-                    },{
-                        id:'0005',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png',
-                        titie:'珠江夜游'
-                    },{
-                        id:'0006',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-                        titie:'泡温泉'
-                    },{
-                        id:'0007',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-                        titie:'一日游'
-                    },{
-                        id:'0008',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1811/f6/e54fad3ea337b02.gif',
-                        titie:'年终大促'
-                    },{
-                        id:'0009',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png',
-                        titie:'玩转长隆'
-                    },{
-                        id:'0010',
-                        imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
-                        titie:'全部玩乐'
-                    }
-                ]
+              }
         }
       
     },
     computed:{
         pages(){
             let pages = [];
-            this.iconsList.forEach((item,index)=>{
+           this.$store.state.iconList.forEach((item,index)=>{
                   let page =  Math.floor(index/8);
                     if(!pages[page]){
                         pages[page] = [];
@@ -97,7 +54,6 @@ export default {
 .icons-table /deep/ .swiper-pagination-bullets{
     position: absolute;
     bottom: -0.4rem;
-    border-bottom: 0.01rem solid rgba(0,0,0,0.2);
     padding: 0.05rem;
     
 }

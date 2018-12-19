@@ -4,7 +4,7 @@
             热销推荐
         </div>
         <ul class="recommend-list">
-            <li class="item" v-for="item of recomList" :key="item.id">
+            <li class="item" v-for="item of  this.$store.state.recommendList " :key="item.id">
                 <div class="img-wrapper">
                     <img :src="item.imgUrl">
                 </div>
@@ -19,34 +19,7 @@
 </template>
 <script>
 export default {
-    name:'HomeRecommend',
-    data(){
-        return {
-            recomList:[
-                {
-                    id:'0001',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/201403/07/30b534b0de51ccac2906bcb6ba159988.jpg_200x200_2f08733b.jpg',
-                    title:'长隆野生动物世界',
-                    info:'熊猫三胞胎与您共享欢乐时光',
-                },{
-                    id:'0002',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/1601/3d/3dc7f222d6bca6a790.img.jpg_200x200_e0bb3017.jpg',
-                    title:'广州花城汇MAG环球魔幻世界',
-                    info:'汇集了全球各种酷炫游乐科技',
-                },{
-                    id:'0003',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/1411/31/74eabd4dc95afd494d92a5006c9ad4f5.water.jpg_200x200_b27fe752.jpg',
-                    title:'美林湖温泉',
-                    info:'低氡珍稀苏打温泉，极富养生特色',
-                },{
-                    id:'0004',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/1812/3d/3d390fa6bce3bf49a3.img.png_200x200_3b8aa65e.png',
-                    title:'广州正佳极地海洋世界',
-                    info:'让孩子感知成人的苦与乐、忙碌与责任',
-                }
-            ]
-        }
-    }
+    name:'HomeRecommend'
 }
 </script>
 <style lang="less" scoped>

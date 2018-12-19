@@ -1,0 +1,125 @@
+{
+  "ret": true,
+  "city":"广州",
+  "data": {
+    "swiperList":[
+      {
+         " id":"001",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1812/47/a51fe403715df102.jpg_750x200_085792b6.jpg"
+      },
+      {
+         " id":"002",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+      },
+       {
+          " id":"003",
+           "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/b7/1e9c4ca462741f02.jpg_750x200_842d5261.jpg"
+      },
+      {
+         " id":"004",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1812/b6/5c41d23b9bb36102.jpg_750x200_8d36a5db.jpg"
+      },
+       {
+          " id":"005",
+           "imgUrl":"http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg"
+      },
+      {
+         " id":"006",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/d4/7fa0b173c269f802.jpg_750x200_b8d88f51.jpg"
+      }
+  ],
+    "iconList":[
+      {
+          "id":"0001",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+          "titie":"景点门票"
+      },{
+          "id":"0002",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+          "titie":"广州必游"
+      },{
+          "id":"0003",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+          "titie":"动植物园"
+      },{
+          "id":"0004",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+          "titie":"游乐场"
+      },{
+          "id":"0005",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
+          "titie":"珠江夜游"
+      },{
+          "id":"0006",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+          "titie":"泡温泉"
+      },{
+          "id":"0007",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+          "titie":"一日游"
+      },{
+          "id":"0008",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/f6/e54fad3ea337b02.gif",
+          "titie":"年终大促"
+      },{
+          "id":"0009",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png",
+          "titie":"玩转长隆"
+      },{
+          "id":"0010",
+          "imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+          "titie":"全部玩乐"
+      }
+  ],
+    "recommendList": [
+      {
+          "id":"0001",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/201403/07/30b534b0de51ccac2906bcb6ba159988.jpg_200x200_2f08733b.jpg",
+          "title":"长隆野生动物世界",
+          "info":"熊猫三胞胎与您共享欢乐时光"
+      },{
+          "id":"0002",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1601/3d/3dc7f222d6bca6a790.img.jpg_200x200_e0bb3017.jpg",
+          "title":"广州花城汇MAG环球魔幻世界",
+          "info":"汇集了全球各种酷炫游乐科技"
+      },{
+          "id":"0003",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1411/31/74eabd4dc95afd494d92a5006c9ad4f5.water.jpg_200x200_b27fe752.jpg",
+          "title":"美林湖温泉",
+          "info":"低氡珍稀苏打温泉，极富养生特色"
+      },{
+          "id":"0004",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1812/3d/3d390fa6bce3bf49a3.img.png_200x200_3b8aa65e.png",
+          "title":"广州正佳极地海洋世界",
+          "info":"让孩子感知成人的苦与乐、忙碌与责任"
+      }, {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
+        "title": "温都水城养生馆",
+        "info": "各种亚热带植物掩映其间仿佛置身热带雨林"
+      }],
+    "weekendList":[
+      {
+          "id":"0001",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+          "title":"南国冰雪乐园",
+          "info":"这里可以让你在南国感受到北国风光，让南国的你“零距离”感受北国银装素裹壮观之景"
+      },{
+          "id":"0002",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+          "title":"浮在海上的绿洲",
+          "info":"南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
+      },{
+          "id":"0003",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1602/9c/39c5ce9ff58609.jpg_r_640x214_efb90102.jpg",
+          "title":"粤西温泉必游",
+          "info":"自驾粤西，这里有最全最心仪的温泉池，环境优美，舒舒服服的泡个热汤，远离繁忙的工作"
+      },{
+          "id":"0004",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1603/e9/e9727ce75946b9fe90.water.jpg_640x276_16bc0daf.jpg",
+          "title":"珠海御温泉",
+          "info":"国内露天温泉旅游度假胜地之一"
+      }
+  ]
+  }
+}
