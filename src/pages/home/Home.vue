@@ -24,7 +24,7 @@ export default {
       HomeRecommend,
       HomeWeekend
   },
-  created(){
+   created(){
     axios.get('/static/mock/index.json').then((suc)=>{
       this.$store.state.defaultCity = suc.data.city;
        this.$store.state.swiperList = suc.data.data.swiperList;

@@ -4,21 +4,21 @@
         <div class="area">
             <div class="title border-topbottom">当前城市</div>
             <div class="button-wrapper">
-                <div class="button">广州</div>
+                <div class="button">{{this.$store.state.defaultCity}}</div>
             </div>
         </div>
 
         <div class="area">
             <div class="title border-topbottom">热门城市</div>
-             <div class="button-wrapper">
-                <div class="button">广州</div>
+             <div class="button-wrapper" v-for="item of hotcities" :key="item.id"> 
+                <div class="button">{{item.name}}</div>
             </div>
         </div>
 
-        <div class="area">
-            <div class="title border-topbottom">A</div>
-            <div class="list-wrapper border-topbottom">
-                阿拉尔
+        <div class="area" v-for="(item,key) in cities" :key='item[0].id'>
+            <div class="title border-topbottom">{{key}}</div>
+            <div class="list-wrapper border-topbottom" v-for="li of item" :key="li.id">
+                {{li.name}}
             </div>
         </div>
         </div>
@@ -28,6 +28,7 @@
 import Bscroll from 'better-scroll'
 export default {
     name:'CityList',
+    props:['hotcities','cities'],
     mounted(){
        this.scroll =  new Bscroll(this.$refs.scroll);
     }
@@ -42,6 +43,7 @@ export default {
         right:0;
         overflow:hidden;
         .area{
+            overflow: hidden;
             .title{
                 width: 100%;
                 background: rgba(221, 221, 221, 0.836);
@@ -57,8 +59,9 @@ export default {
                 }
             }
             .button-wrapper{
-                padding: .2rem .15rem 0 .12rem; 
+                padding: .1rem .15rem .1rem .12rem; 
                 overflow: hidden;
+                float:left;
                 .button{
                     float:left;
                     padding: 0 .5rem;
@@ -68,7 +71,7 @@ export default {
                     border: 1px solid #ccc;
                     border-radius: .1rem;
                     margin-right:.2rem;
-                    margin-bottom:.2rem;
+                    // margin-bottom:rem;
                }
             }
             .list-wrapper{
