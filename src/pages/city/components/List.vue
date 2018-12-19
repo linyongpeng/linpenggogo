@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="area" v-for="(item,key) in cities" :key='item[0].id'>
+        <div class="area" v-for="(item,key) in cities" :key='item[0].id' :ref="key">
             <div class="title border-topbottom">{{key}}</div>
             <div class="list-wrapper border-topbottom" v-for="li of item" :key="li.id">
                 {{li.name}}
@@ -26,11 +26,25 @@
 </template>
 <script>
 import Bscroll from 'better-scroll'
+import {mapState} from 'vuex'
 export default {
     name:'CityList',
     props:['hotcities','cities'],
+    computed:{
+       ...mapState(['letter'])
+    },
     mounted(){
        this.scroll =  new Bscroll(this.$refs.scroll);
+    //    console.log(this.letter);
+    },
+    watch:{
+        letter(){
+            if(this.letter){
+                let ele = this.$refs[this.letter][0];
+               this.scroll.scrollToElement(ele);
+            }
+            
+        }
     }
 }
 </script>
