@@ -5,7 +5,9 @@
             <span class="iconfont">&#xe632;</span>
                 输入城市/景点/游玩/主题
             </div>
-        <div class="header-city">{{this.$store.state.defaultCity}}<span class="iconfont">&#xe64a;</span></div>
+        <router-link to="/city">
+            <div class="header-city">{{this.$store.state.defaultCity}}<span class="iconfont">&#xe64a;</span></div>
+        </router-link>
     </div>
 </template>
 <script>
@@ -47,6 +49,7 @@ export default {
             height: 100%;
              text-align: center;
              font-size: 0.26rem;
+             color: #fff;
              span{
                  margin-left: 0.08rem;
                  font-size: 0.2rem;
