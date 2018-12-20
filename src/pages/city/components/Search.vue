@@ -3,7 +3,7 @@
         <div class="city-search">
             <input v-model="keyword" type="text" placeholder="输出城市名或者拼音">
         </div>
-        <div class="search-content" v-show="keyword.length">
+        <div class="search-content" v-show="keyword">
             <ul class="result-list">
                 <li class="result" v-for="item of resultlist" :key="item.id"  @click="changecity">{{item.name}}</li>
                 <li class="result" v-show="!this.resultlist.length">没有找到匹配的城市</li>
@@ -33,6 +33,10 @@ export default {
         keyword(){
             if(this.timer){
                 clearTimeout(this.timer);
+            }
+            if(!this.keyword){
+                this.resultlist = [];
+                return;
             }
             setTimeout(()=>{
                 let result = [];
