@@ -14,7 +14,6 @@ export default new Vuex.Store({
     mutations:{
         changeLetter(state,val){
             state.letter = val;
-            // console.log(val,state.letter)
         }
     }
 })
