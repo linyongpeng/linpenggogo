@@ -5,8 +5,8 @@
         </div>
         <div class="search-content" v-show="keyword.length">
             <ul class="result-list">
-                <li class="result" v-for="item of resultlist" :key="item.id">{{item.name}}</li>
-                 <li class="result" v-show="!this.resultlist.length">没有找到匹配的城市</li>
+                <li class="result" v-for="item of resultlist" :key="item.id"  @click="changecity">{{item.name}}</li>
+                <li class="result" v-show="!this.resultlist.length">没有找到匹配的城市</li>
             </ul>
         </div>
     </div>
@@ -21,6 +21,12 @@ export default {
             keyword:'',
             timer:null,
             resultlist:[]
+        }
+    },
+    methods:{
+        changecity(e){
+            this.$store.commit('changeDefaultCity',e.target.innerText);
+            this.$router.push('/');
         }
     },
     watch:{

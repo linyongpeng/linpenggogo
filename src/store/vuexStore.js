@@ -8,12 +8,16 @@ export default new Vuex.Store({
         iconList:[],
         recommendList:[],
         weekendList:[],
-        defaultCity:'广州',
+        defaultCity:localStorage.defaultCity || '广州',
         letter:''
     },
     mutations:{
         changeLetter(state,val){
             state.letter = val;
+        },
+        changeDefaultCity(state,val){
+            state.defaultCity = val;
+            localStorage.defaultCity = val;
         }
     }
 })

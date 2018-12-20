@@ -26,7 +26,6 @@ export default {
   },
    created(){
     axios.get('/static/mock/index.json').then((suc)=>{
-      this.$store.state.defaultCity = suc.data.city;
        this.$store.state.swiperList = suc.data.data.swiperList;
         this.$store.state.iconList = suc.data.data.iconList;
          this.$store.state.recommendList = suc.data.data.recommendList;

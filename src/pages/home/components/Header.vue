@@ -6,13 +6,17 @@
                 输入城市/景点/游玩/主题
             </div>
         <router-link to="/city">
-            <div class="header-city">{{this.$store.state.defaultCity}}<span class="iconfont">&#xe64a;</span></div>
+            <div class="header-city">{{defaultCity}}<span class="iconfont">&#xe64a;</span></div>
         </router-link>
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
-    name:'HomeHeader'
+    name:'HomeHeader',
+    computed:{
+        ...mapState(['defaultCity'])
+    }
 }
 </script>
 <style lang="less" scoped>
@@ -45,14 +49,17 @@ export default {
             
         }
         .header-city{   
-            width: 1.24rem;
+            min-width: 1.24rem;
             height: 100%;
              text-align: center;
              font-size: 0.26rem;
              color: #fff;
+             padding-left: 0.1rem;
+            //  .textEllipsis;
              span{
                  margin-left: 0.08rem;
                  font-size: 0.2rem;
+                 margin-right: 0.08rem;
              }
         }
 
