@@ -16,16 +16,20 @@
                 2
             </div>
         </div>
-    </div>    
-    <detail-gallery :imgs="imgs" @closeGallery="close" v-show="showGallery"></detail-gallery>
+    </div>
+    <animation>
+        <detail-gallery :imgs="imgs" @closeGallery="close" v-show="showGallery"></detail-gallery>
+    </animation>    
 </div>
 </template>
 <script>
 import DetailGallery from '@/pages/detail/components/Gallery'
+import Animation from '@/pages/detail/components/Animation'
 export default {
     name:"DetailBanner",
     components:{
-        DetailGallery
+        DetailGallery,
+        Animation
     },
     data(){
         return {
