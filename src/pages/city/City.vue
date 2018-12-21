@@ -29,7 +29,7 @@ export default {
       }
   },
  created(){
-      axios.get('/static/mock//city.json').then((suc)=>{
+      axios.get('/static/mock/city.json').then((suc)=>{
           this.hotcities = suc.data.data.hotCities;
           this.cities = suc.data.data.cities;
           
